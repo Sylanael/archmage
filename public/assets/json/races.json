@@ -1,0 +1,80 @@
+{
+	"darkelf": {
+		"name": "Dark Elf",
+		"bonus1": "charisma",
+		"bonus2": "dexterity",
+		"racialpower": "cruel"
+	},
+	"dragonspawn": {
+		"name": "Dragonspawn",
+		"bonus1": "charisma",
+		"bonus2": "strength",
+		"racialpower": "breathweapon"
+	},
+	"dwarf": {
+		"name": "Dwarf",
+		"bonus1": "constitution",
+		"bonus2": "wisdom",
+		"racialpower": "bestshot"
+	},
+	"forgeborn": {
+		"name": "Forgeborn",
+		"bonus1": "charisma",
+		"bonus2": "dexterity",
+		"racialpower": ""
+	},
+	"gnome": {
+		"name": "Gnome",
+		"bonus1": "charisma",
+		"bonus2": "dexterity",
+		"racialpower": ""
+	},
+	"halfelf": {
+		"name": "Half-Elf",
+		"bonus1": "charisma",
+		"bonus2": "dexterity",
+		"racialpower": ""
+	},
+	"halforc": {
+		"name": "Half-orc",
+		"bonus1": "charisma",
+		"bonus2": "dexterity",
+		"racialpower": ""
+	},
+	"halfling": {
+		"name": "Halfling",
+		"bonus1": "charisma",
+		"bonus2": "dexterity",
+		"racialpower": ""
+	},
+	"highelf": {
+		"name": "High Elf",
+		"bonus1": "charisma",
+		"bonus2": "dexterity",
+		"racialpower": ""
+	},
+	"holyone": {
+		"name": "Holy One",
+		"bonus1": "charisma",
+		"bonus2": "dexterity",
+		"racialpower": ""
+	},
+	"human": {
+		"name": "Human",
+		"bonus1": "charisma",
+		"bonus2": "dexterity",
+		"racialpower": ""
+	},
+	"demontouched": {
+		"name": "Demon-touched",
+		"bonus1": "charisma",
+		"bonus2": "dexterity",
+		"racialpower": ""
+	},
+	"woodelf": {
+		"name": "Wood Elf",
+		"bonus1": "charisma",
+		"bonus2": "dexterity",
+		"racialpower": ""	
+	}
+}
