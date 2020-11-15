@@ -31,12 +31,12 @@ class CharacterController extends BaseController
 			'dragonspawn' => array(
 				'name' => 'Dragonspawn',
 				'bonus1' => 'charisma',
-				'bonus2' => 'strenght',
+				'bonus2' => 'strength',
 				'racialpower' => 'breathweapon'
 			),
 			'dwarf' => array(
 				'name' => 'Dwarf',
-				'bonus1' => 'constitution',
+				'bonus1' => 'constitution',	
 				'bonus2' => 'wisdom',
 				'racialpower' => 'bestshot'
 			),
@@ -487,7 +487,7 @@ class CharacterController extends BaseController
 
 		#Add Class Bonus
 		switch ($classBonus) {
-			case 'strenght':
+			case 'strength':
 				$str = $str +2;
 			break;
 			case 'dexterity':
@@ -509,7 +509,7 @@ class CharacterController extends BaseController
 
 		#Add Race Bonus
 		switch ($raceBonus) {
-			case 'strenght':
+			case 'strength':
 				$str = $str +2;
 			break;
 			case 'dexterity':
@@ -555,8 +555,8 @@ class CharacterController extends BaseController
 
 
 		$output = array(
-			'strenght' => $str, 
-			'strenghtModifier' => $strMod, 
+			'strength' => $str, 
+			'strengthModifier' => $strMod, 
 			'dexterity' => $dex, 
 			'dexterityModifier' => $dexMod, 
 			'constitution' => $con, 
