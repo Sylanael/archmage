@@ -27,7 +27,8 @@ class CharacterController extends BaseController
 		$raceFeatureArray = json_decode(file_get_contents(base_url(). "/assets/json/raceFeatures.json"), true);
 		$classTalentArray = json_decode(file_get_contents(base_url(). "/assets/json/classTalents.json"), true);
 
-		$name = 'Name Generated Here';
+		$name = 'Character Name';
+		$player = 'Player Name';
 		$randomRace = array_rand($raceArray, 1);
 		$race = $raceArray[$randomRace]['name'];
 		$randomClass = array_rand($classArray, 1);
@@ -107,6 +108,7 @@ class CharacterController extends BaseController
 
 		$level = 1;
 		$hitPoints = 0;
+		$staggered = floor($hitPoints/2);
 		$armorClass = 0;
 		$physicalDef  = 0;
 		$mentalDef = 0;
@@ -136,6 +138,8 @@ class CharacterController extends BaseController
 			'wisdomModifier' => $wisMod, 
 			'charisma' => $cha, 
 			'charismaModifier' => $chaMod, 
+			'name' => $name, 
+			'player' => $player, 
 			'race' => $race, 
 			'class' => $class, 
 			'raceBonus' => $raceBonus,
@@ -148,9 +152,16 @@ class CharacterController extends BaseController
 			'totalChampionClassTalent' => $totalChampionClassTalent,
 			'totalEpicClassTalent' => $totalEpicClassTalent,
 			'hitPoints' => $hitPoints,
+			'staggered' => $staggered,
+			'armorClass' => $armorClass,
+			'physicalDef' => $physicalDef,
+			'mentalDef' => $mentalDef,
+			'intiativeBonus' => $intiativeBonus,
+			'recoveries' => $recoveries,
+			'recoveryDice' => $recoveryDice,
 		);
 
-		echo json_encode($output);
+		return view('sheet', $output);
 	}
 
 	//--------------------------------------------------------------------
