@@ -62,6 +62,32 @@
 	  text-transform: uppercase;
 }
 
+.textareaBackgrounds {
+	border: 2px solid #5D5751;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.borderBox {
+	border:1px solid #000;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 12px;
+	font-size:0.8rem;
+}
+
+.featsBox {
+	border:1px solid #000;
+	padding: 5px;
+	border-radius: 12px;
+	margin: 10px;
+	font-size:0.8rem;
+}
+
+.collumSeperator {
+	padding: 10px;
+}
+
 .h1-overwrite {
     font-size: 2.5em;
     color: #E23434;
@@ -74,10 +100,11 @@
 .h2-overwrite {
     font-size: 1.25em;
     color: #5D5751;
-    font-family: system-ui;
+    font-family: fantasy;
     padding-top: 10px;
     padding-bottom: 10px;
     -webkit-font-smoothing: antialiased;
+    text-decoration: underline;
 }
 
 .h3-overwrite {
@@ -115,8 +142,8 @@
     -webkit-font-smoothing: antialiased;
 }
 
-.fullscreensize {
-	max-width: none;
+.marginauto {
+	margin: auto;
 }
 
 .center1200 {
@@ -137,10 +164,6 @@
 	width: 1000px;
 }
 
-.content600 {
-	width: 600px;
-}
-
 .circleball {
   display: block;
   background: black;
@@ -151,15 +174,7 @@
   margin-right:5px;
 }
 
-.circleball-small {
-  display: block;
-  background: black;
-  border-radius: 100%;
-  height: 10px;
-  width: 10px;
-  margin: 0;
-  margin-right:5px;
-}
+/*Paddings*/
 
 .padding-row {
 	padding-top: 120px;
@@ -172,7 +187,6 @@
 .padding-row-quater {
 	padding-top: 30px;
 }
-
 
 .padding-bottom-quater {
 	padding-bottom: 30px;

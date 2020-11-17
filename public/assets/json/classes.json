@@ -19,8 +19,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				},
+			},
+	"rangedWeapons": {
+		"dagger":"dagger",
+		"handCrossbow":"handCrossbow",
+		"lightCrossbow":"lightCrossbow",
+		"shortBow":"shortBow",
+		"heavyCrossbow":"heavyCrossbow",
+		"longBow":"longBow"
+		},
+	"meleeWeapons": {
+		"dagger":"dagger",
+		"club":"club",
+		"handAxe":"handAxe",
+		"warclub":"warclub",
+		"spear":"spear",
+		"longsword":"longsword",
+		"battleaxe":"battleaxe",
+		"greatsword":"greatsword",
+		"greataxe":"greataxe"
+		}
+	},
 	"bard": {
 		"name": "Bard",
 		"bonus1": "charisma",
@@ -41,8 +60,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				},
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			},
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"chaosmage": {
 		"name": "Chaos Mage",
 		"bonus1": "charisma",
@@ -63,8 +101,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"cleric": {
 		"name": "Cleric",
 		"bonus1": "charisma",
@@ -85,8 +142,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"commander": {
 		"name": "Commander",
 		"bonus1": "charisma",
@@ -107,8 +183,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"demonologist": {
 		"name": "Demonologist",
 		"bonus1": "charisma",
@@ -129,8 +224,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"druid": {
 		"name": "Druid",
 		"bonus1": "charisma",
@@ -151,8 +265,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"fighter": {
 		"name": "Fighter",
 		"bonus1": "charisma",
@@ -173,8 +306,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"monk": {
 		"name": "Monk",
 		"bonus1": "charisma",
@@ -195,8 +347,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"necromancer": {
 		"name": "Necromancer",
 		"bonus1": "charisma",
@@ -217,8 +388,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"occultist": {
 		"name": "Occultist",
 		"bonus1": "charisma",
@@ -239,8 +429,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"paladin": {
 		"name": "Paladin",
 		"bonus1": "charisma",
@@ -261,8 +470,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"ranger": {
 		"name": "Ranger",
 		"bonus1": "charisma",
@@ -283,8 +511,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"rogue": {
 		"name": "Rogue",
 		"bonus1": "charisma",
@@ -305,8 +552,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"sorcerer": {
 		"name": "Sorcerer",
 		"bonus1": "charisma",
@@ -327,8 +593,27 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}, 
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+		},
 	"wizard": {
 		"name": "Wizard",
 		"bonus1": "charisma",
@@ -349,6 +634,25 @@
 			"physicalDefBase": 12,
 			"mentalDefBase": 12,
 			"recoveries": 8
-					}
-				}
+					},
+		"rangedWeapons": {
+			"dagger":"dagger",
+			"handCrossbow":"handCrossbow",
+			"lightCrossbow":"lightCrossbow",
+			"shortBow":"shortBow",
+			"heavyCrossbow":"heavyCrossbow",
+			"longBow":"longBow"
+			}, 
+		"meleeWeapons": {
+			"dagger":"dagger",
+			"club":"club",
+			"handAxe":"handAxe",
+			"warclub":"warclub",
+			"spear":"spear",
+			"longsword":"longsword",
+			"battleaxe":"battleaxe",
+			"greatsword":"greatsword",
+			"greataxe":"greataxe"
+			}
+			}
 }

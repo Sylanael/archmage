@@ -19,62 +19,62 @@
 	},
 	"forgeborn": {
 		"name": "Forgeborn",
-		"bonus1": "charisma",
-		"bonus2": "dexterity",
-		"racialpower": ""
+		"bonus1": "strength",
+		"bonus2": "constitution",
+		"racialpower": "neversaydie"
 	},
 	"gnome": {
 		"name": "Gnome",
-		"bonus1": "charisma",
-		"bonus2": "dexterity",
-		"racialpower": ""
+		"bonus1": "dexterity",
+		"bonus2": "intelligence",
+		"racialpower": "confounding"
 	},
 	"halfelf": {
 		"name": "Half-Elf",
-		"bonus1": "charisma",
-		"bonus2": "dexterity",
-		"racialpower": ""
+		"bonus1": "constitution",
+		"bonus2": "charisma",
+		"racialpower": "surprising"
 	},
 	"halforc": {
 		"name": "Half-orc",
-		"bonus1": "charisma",
+		"bonus1": "strength",
 		"bonus2": "dexterity",
-		"racialpower": ""
+		"racialpower": "lethal"
 	},
 	"halfling": {
 		"name": "Halfling",
-		"bonus1": "charisma",
+		"bonus1": "constitution",
 		"bonus2": "dexterity",
-		"racialpower": ""
+		"racialpower": "evasive"
 	},
 	"highelf": {
 		"name": "High Elf",
-		"bonus1": "charisma",
-		"bonus2": "dexterity",
-		"racialpower": ""
+		"bonus1": "intelligence",
+		"bonus2": "charisma",
+		"racialpower": "highbloodTeleport"
 	},
 	"holyone": {
 		"name": "Holy One",
-		"bonus1": "charisma",
-		"bonus2": "dexterity",
-		"racialpower": ""
+		"bonus1": "wisdom",
+		"bonus2": "charisma",
+		"racialpower": "halo"
 	},
 	"human": {
 		"name": "Human",
-		"bonus1": "charisma",
+		"bonus1": "strength",
 		"bonus2": "dexterity",
-		"racialpower": ""
+		"racialpower": "quickToFight"
 	},
 	"demontouched": {
 		"name": "Demon-touched",
-		"bonus1": "charisma",
-		"bonus2": "dexterity",
-		"racialpower": ""
+		"bonus1": "strength",
+		"bonus2": "intelligence",
+		"racialpower": "curseOfChaos"
 	},
 	"woodelf": {
 		"name": "Wood Elf",
-		"bonus1": "charisma",
-		"bonus2": "dexterity",
-		"racialpower": ""	
+		"bonus1": "dexterity",
+		"bonus2": "wisdom",
+		"racialpower": "elvenGrace"	
 	}
 }

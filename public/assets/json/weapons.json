@@ -1,0 +1,111 @@
+{
+	"meleeWeapons": {
+		"dagger": {
+			"name": "Dagger",
+			"type": "One-Handed",
+			"class": "Small",
+			"damage": "d4",
+			"penalty": "none"
+		},
+		"club": {
+			"name": "Club",
+			"type": "Two-Handed",
+			"class": "Small",
+			"damage": "d6",
+			"penalty": "none"
+		},
+		"handAxe": {
+			"name": "Hand-Axe",
+			"type": "One-Handed",
+			"class": "Light or Simple",
+			"damage": "d6",
+			"penalty": "none"
+		},
+		"warclub": {
+			"name": "Warclub",
+			"type": "One-Handed",
+			"class": "Light or Simple",
+			"damage": "d6",
+			"penalty": "none"
+		},
+		"spear": {
+			"name": "Spear",
+			"type": "Two-Handed",
+			"class": "Light or Simple",
+			"damage": "d8",
+			"penalty": "none"
+		},
+		"longsword": {
+			"name": "Longsword",
+			"type": "One-Handed",
+			"class": "Heavy or Martial",
+			"damage": "d8",
+			"penalty": "none"
+		},
+		"battleaxe": {
+			"name": "Battleaxe",
+			"type": "One-Handed",
+			"class": "Heavy or Martial",
+			"damage": "d8",
+			"penalty": "none"
+		},
+		"greatsword": {
+			"name": "Greatsword",
+			"type": "One-Handed",
+			"class": "Heavy or Martial",
+			"damage": "d10",
+			"penalty": "none"
+		},
+		"greataxe": {
+			"name": "Greataxe",
+			"type": "One-Handed",
+			"class": "Heavy or Martial",
+			"damage": "d10",
+			"penalty": "none"
+			}
+	},
+	"rangedWeapons": {
+		"dagger": {
+			"name": "Dagger",
+			"type": "Thrown",
+			"class": "Small",
+			"damage": "d4",
+			"penalty": "none"
+		},
+		"handCrossbow": {
+			"name": "Hand Crossbow",
+			"type": "Crossbow",
+			"class": "Small",
+			"damage": "d4",
+			"penalty": "-5 atk"
+		},
+		"lightCrossbow": {
+			"name": "Light Crossbow",
+			"type": "Crossbow",
+			"class": "Light or Simple",
+			"damage": "d6",
+			"penalty": "-5 atk"
+		},
+		"shortBow": {
+			"name": "Shortbow",
+			"type": "Bow",
+			"class": "Light or Simple",
+			"damage": "d6",
+			"penalty": "none"
+		},
+		"heavyCrossbow": {
+			"name": "Heavy Crossbow",
+			"type": "Crossbow",
+			"class": "Heavy or Martial",
+			"damage": "d8",
+			"penalty": "-5 atk"
+		},
+		"longBow": {
+			"name": "Longbow",
+			"type": "Bow",
+			"class": "Heavy or Martial",
+			"damage": "d8",
+			"penalty": "none"
+		}
+	}
+}	
