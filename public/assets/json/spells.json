@@ -1,0 +1,12 @@
+{
+	"name": {
+		"name": "name",
+		"type": "daily",
+		"recharge": "16+",
+		"action": "quick",
+		"trigger": "something",
+		"effect": "something",
+		"adventureFeat": "something",
+		"championFeat": "none",
+		"epicFeat": "none"
+}

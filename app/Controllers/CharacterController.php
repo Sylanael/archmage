@@ -25,7 +25,7 @@ class CharacterController extends BaseController
 		$classArray = json_decode(file_get_contents(base_url(). "/assets/json/classes.json"), true);
 		$featsArray = json_decode(file_get_contents(base_url(). "/assets/json/feats.json"), true);
 		$raceFeatureArray = json_decode(file_get_contents(base_url(). "/assets/json/raceFeatures.json"), true);
-		$classTalentArray = json_decode(file_get_contents(base_url(). "/assets/json/classTalents.json"), true);
+		$classTalentArray = json_decode(file_get_contents(base_url(). "/assets/json/classFeatures.json"), true);
 		$weaponArray = json_decode(file_get_contents(base_url(). "/assets/json/weapons.json"), true);
 
 		$name = 'Character Name';

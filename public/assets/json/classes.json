@@ -38,6 +38,9 @@
 		"battleaxe":"battleaxe",
 		"greatsword":"greatsword",
 		"greataxe":"greataxe"
+		},
+	"classFeature": {
+		"barbarianRage":"barbarianRage"
 		}
 	},
 	"bard": {
@@ -79,6 +82,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"chaosmage": {
@@ -120,6 +126,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"cleric": {
@@ -161,6 +170,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"commander": {
@@ -202,6 +214,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"demonologist": {
@@ -243,6 +258,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"druid": {
@@ -284,6 +302,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"fighter": {
@@ -325,6 +346,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"monk": {
@@ -366,6 +390,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"necromancer": {
@@ -407,6 +434,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"occultist": {
@@ -448,6 +478,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"paladin": {
@@ -489,6 +522,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"ranger": {
@@ -530,6 +566,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"rogue": {
@@ -571,6 +610,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"sorcerer": {
@@ -612,6 +654,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
 		},
 	"wizard": {
@@ -653,6 +698,9 @@
 			"battleaxe":"battleaxe",
 			"greatsword":"greatsword",
 			"greataxe":"greataxe"
+			},
+		"classFeature": {
+			"something":"something"
 			}
-			}
+	}
 }
