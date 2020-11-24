@@ -33,7 +33,8 @@ class CharacterController extends BaseController
 		$randomRace = array_rand($raceArray, 1);
 		$raceName = $raceArray[$randomRace]['name'];
 		$race = $raceArray[$randomRace];
-		$randomClass = array_rand($classArray, 1);
+		//$randomClass = array_rand($classArray, 1);
+		$randomClass = 'barbarian';
 		$className = $classArray[$randomClass]['name'];
 		$class = $classArray[$randomClass];
 
@@ -44,6 +45,9 @@ class CharacterController extends BaseController
 		#Choose Class Bonus
 		$classBonusRandom = rand(1,2); // 1 = Bonus 1, 2 = Bonus 2
 		$classBonus = $classArray[$randomClass]['bonus'.$classBonusRandom];
+
+		#Choose Armor
+		$armorType = rand(1,2); // 1 = AC Base 1, 2 = AC Base 2
 
 		#If Race Bonus same as Class Bonus use the alternate Bonus
 		if ($classBonusRandom == 1) {
@@ -158,15 +162,14 @@ class CharacterController extends BaseController
 		$chaMod = floor(($cha - 10)/2);
 
 		$level = 1;
-		$hitPoints = 0;
-		$armorClass = 0;
-		$physicalDef  = 0;
-		$mentalDef = 0;
-		$intiativeBonus = 0;
-		$recoveries = 0;
-		$recoveryDice = 0;
+
+		$intiativeBonus = $dexMod + $level;
+		$recoveries = $classArray[$randomClass]['recoveries'];
+		$recoveryDice = $classArray[$randomClass]['recoveryDice'];
 
 		$hitPoints = ($classArray[$randomClass]['level1']['hitpoints-formula-1']+$conMod)*$classArray[$randomClass]['level1']['hitpoints-formula-2'];
+		$hitPointsFormula1 = $classArray[$randomClass]['level1']['hitpoints-formula-1'];
+		$hitPointsFormula2 = $classArray[$randomClass]['level1']['hitpoints-formula-2'];
 		$staggered = floor($hitPoints/2);
 		$totalAdventureFeats = $classArray[$randomClass]['level1']['totalAdventureFeats'];
 		$totalChampionFeats = $classArray[$randomClass]['level1']['totalChampionFeats'];
@@ -175,7 +178,26 @@ class CharacterController extends BaseController
 		$totalChampionClassTalent = $classArray[$randomClass]['level1']['totalChampionClassTalent'];
 		$totalEpicClassTalent = $classArray[$randomClass]['level1']['totalEpicClassTalent'];
 
+		# AC, PD, MD calculations
+		$armorClassBase = $classArray[$randomClass]['armorClassBase'.$armorType];
+		$armorClassType = $classArray[$randomClass]['armorClassType'.$armorType];
+		$physicalDefBase  = $classArray[$randomClass]['physicalDefBase'];
+		$mentalDefBase = $classArray[$randomClass]['mentalDefBase'];
 
+		$midModStrConDex = array($strMod, $conMod, $dexMod); 
+		$midModConDexWis = array($conMod, $dexMod, $wisMod); 
+		$midModIntWisCha = array($intMod, $wisMod, $chaMod); 
+
+		sort($midModStrConDex);
+		sort($midModConDexWis);
+		sort($midModIntWisCha);
+
+		$physicalDef  = $physicalDefBase + $midModStrConDex[1] + $level;
+		$armorClass = $armorClassBase + $midModConDexWis[1] + $level;
+		$mentalDef = $mentalDefBase + $midModIntWisCha[1] + $level;
+
+
+		#Racial Power(s)
 		$racialPowerArray = array(
 			'name' => $raceFeatureArray[$racialPower]['name'],
 			'trigger' => $raceFeatureArray[$racialPower]['trigger'],
@@ -184,6 +206,49 @@ class CharacterController extends BaseController
 			'championFeat' => $raceFeatureArray[$racialPower]['championFeat'],
 			'epicFeat' => $raceFeatureArray[$racialPower]['epicFeat'],
 		);
+
+		#Class Feature(s)
+		$classFeatures = $classArray[$randomClass]['classFeature'];
+		$classFeaturesArray = array();
+		foreach ($classFeatures as $key) {
+			$array = array(
+				"name" => $classTalentArray[$key]['name'],
+				"type" =>  $classTalentArray[$key]['type'],
+				"recharge" =>  $classTalentArray[$key]['recharge'],
+				"action" =>  $classTalentArray[$key]['action'],
+				"trigger" =>  $classTalentArray[$key]['trigger'],
+				"effect" =>  $classTalentArray[$key]['effect'],
+				"adventureFeat" =>  $classTalentArray[$key]['adventureFeat'],
+				"championFeat" =>  $classTalentArray[$key]['championFeat'],
+				"epicFeat" =>  $classTalentArray[$key]['epicFeat'],
+				"source" =>  $classTalentArray[$key]['source'],
+			);
+			array_push($classFeaturesArray, $array);
+		}
+
+		#Class Talent(s)
+		$classTalents = $classArray[$randomClass]['adventureTalents'];
+		$classTalents = array_rand($classTalents, 3);
+		$classAdventureTalentsArray = array();
+		foreach ($classTalents as $key) {
+			$array = array(
+				"name" => $classTalentArray[$key]['name'],
+				"type" =>  $classTalentArray[$key]['type'],
+				"recharge" =>  $classTalentArray[$key]['recharge'],
+				"action" =>  $classTalentArray[$key]['action'],
+				"trigger" =>  $classTalentArray[$key]['trigger'],
+				"effect" =>  $classTalentArray[$key]['effect'],
+				"adventureFeat" =>  $classTalentArray[$key]['adventureFeat'],
+				"championFeat" =>  $classTalentArray[$key]['championFeat'],
+				"epicFeat" =>  $classTalentArray[$key]['epicFeat'],
+				"source" =>  $classTalentArray[$key]['source'],
+			);
+			array_push($classAdventureTalentsArray, $array);
+		}
+
+		#Power(s) & Spell(s)
+
+		#Feat(s)
 
 		//Derived Stats
 		$strPlusLevel = $strMod + $level;
@@ -229,11 +294,27 @@ class CharacterController extends BaseController
 			'meleeWeapon' => $meleeWeaponsArray,
 			'strPlusLevel' => $strPlusLevel,
 			'dexPlusLevel' => $dexPlusLevel,
+			'hitPointsFormula1' => $hitPointsFormula1,
+			'hitPointsFormula2' => $hitPointsFormula2,
+			'classFeatures' => $classFeaturesArray,
+			'classAdventureTalents' => $classAdventureTalentsArray,
 		);
 
-		return view('sheet', $output);
+		return $output;
 	}
 
+	public function sheetDisplay()
+	{
+		$data = CharacterController::characterGenerator();
+		return view('sheet', $data);
+	}
+
+
+	public function apiOutput()
+	{
+		$data = CharacterController::characterGenerator();
+		echo json_encode($data);
+	}
 	//--------------------------------------------------------------------
 
 }

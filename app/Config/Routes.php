@@ -31,7 +31,8 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'HomeController::characterSheet(id)');
-$routes->get('/api/characterGenerator', 'CharacterController::characterGenerator');
+$routes->get('/api/characterGenerator', 'CharacterController::apiOutput');
+$routes->get('/sheet', 'CharacterController::sheetDisplay');
 $routes->get('/welcome', 'HomeController::welcome');
 
 /**

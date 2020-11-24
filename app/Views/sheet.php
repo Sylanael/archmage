@@ -99,7 +99,7 @@
       <span class="levelBonus"><strong>Initiative:</strong> <?= $intiativeBonus ?></span>
   	</div>
   	<div class="col-lg-4">
-  		<span class="levelBonus"><strong>Recoveries:</strong> <?= $recoveries ?> + <?= $constitutionModifier ?></span>
+  		<span class="levelBonus"><strong>Recoveries:</strong> <?= $level ?>d<?= $hitPointsFormula1 ?> + <?= $constitutionModifier ?></span>
   	</div>
   	<div class="col-lg-4">
       <span class="levelBonus"><strong>Hit Points:</strong> <?= $hitPoints ?></span>
@@ -138,14 +138,32 @@
 
 
               <div class="row marginauto">
-              <h2 class="h2-overwrite">Class Features</h2>
+                <div class="col-12">
+                  <h2 class="h2-overwrite">Class Features</h2>
+                </div>
+                <div class="col-12">
+                  <h4 class="h5-overwrite">Every <?= $class ?> has accessed to the following: </h2>
+                </div>
               </div>
-              <div class="row borderBox">
-                <p>
-                  <strong>Building Frenzy: </strong>
-                  You gain the Building Frenzy ability, usable one battle per day.
-                </p>
+            <?php foreach ($classFeatures as $key): ?>
+            <div class="row featsBox">
+              <div class="col-lg-7">
+              <strong><?= $key['name'] ?></strong>
               </div>
+              <div class="col-lg-5">
+              <strong>Recharge: <?= $key['recharge'] ?></strong>
+              </div>
+              <div class="col-lg-12">
+                <strong><?= $key['action'] ?> Action</strong>
+              </div>
+              <div class="col-lg-12">
+              <strong>Trigger: </strong><?= $key['trigger'] ?>
+              </div>
+              <div class="col-lg-12">
+              <strong>Effect: </strong><?= $key['effect'] ?>
+              </div>
+            </div>
+            <?php endforeach ?>
 
         </div>
 
@@ -231,57 +249,28 @@
         </div>
 
         <div class="col-lg-4 collumSeperator">
+           <div class="row marginauto">
+                <div class="col-12">
+                  <h2 class="h2-overwrite">Class Talents</h2>
+                </div>
+            </div>
 
+          <?php foreach ($classAdventureTalents as $key): ?>
           <div class="row featsBox">
             <div class="col-lg-7">
-            <strong>Barbaric Cleave</strong>
+            <strong><?= $key['name'] ?></strong>
             </div>
             <div class="col-lg-5">
-            <strong>Barbarian</strong>
+            <strong><?= $class ?></strong>
             </div>
             <div class="col-lg-12">
-            <strong>Trigger: </strong>You drop a foe to 0 hp with a barbarian melee attack.
+            <strong>Trigger: </strong><?= $key['trigger'] ?>
             </div>
             <div class="col-lg-12">
-            <strong>Effect: </strong>Make another barbarian melee attack against another target.
+            <strong>Effect: </strong><?= $key['effect'] ?>
             </div>
           </div>
-
-          <div class="row featsBox">
-            <div class="col-lg-7">
-            <strong>Building Frenzy</strong>
-            </div>
-            <div class="col-lg-5">
-            <strong>Daily</strong>
-            </div>
-            <div class="col-lg-12">
-            <strong>Trigger: </strong>You miss with an attack.
-            </div>
-            <div class="col-lg-12">
-            <strong>Effect: </strong>You deal +1d6 damage with melee attacks until the end of the battle. Increase the additional damage by +1d6 each time one of your attack misses, up to a maximum of +4d6.
-            </div>
-            <div class="col-lg-12">
-            <strong>Adventurer Feat: </strong>You deal +1d6 damage with melee attacks until the end of the battle. Increase the additional damage by +1d6 each time one of your attack misses, up to a maximum of +4d6.
-            </div>
-          </div>
-
-           <div class="row featsBox">
-            <div class="col-lg-7">
-            <strong>Barbarian Rage</strong>
-            </div>
-            <div class="col-lg-5">
-            <strong>Recharge 13+</strong>
-            </div>
-            <div class="col-lg-12">
-              <strong>Free Action</strong>
-            </div>
-            <div class="col-lg-12">
-            <strong>Effect: </strong>You fling into a rage for the rest of the battle.  While raging, you roll 2d20 to hit with your melee and thrown weapon attacks instead of 1d20. Use the higher roll for the attack. If  you roll a natural 11+ with both dice and your best attack roll is it a hit, the attack is automatically a critical hit!
-            </div>
-            <div class="col-lg-12">
-            <strong>Adventurer Feat: </strong>Whenever the escalation die is 4+, as a quick action, you can start raging for free (it doesn't count as your normal usage and does not need a recharge)
-            </div>
-          </div>
+          <?php endforeach ?>
 
         </div>
   </div>
